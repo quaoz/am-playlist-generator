@@ -130,3 +130,5 @@ dmypy.json
 
 /shelf/
 /workspace.xml
+
+/keys.env
