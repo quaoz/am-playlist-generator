@@ -1,9 +1,17 @@
 from bs4 import BeautifulSoup
 
 
-def get_apple_music_tracks(path):
+# reads in the apple music xml file using beautiful soups xml parser
+def get_data(path):
     with open(path) as file:
         data = BeautifulSoup(file, "xml")
+
+    return data
+
+
+# extracts the artists and song titles from the xml file
+def get_apple_music_tracks(path):
+    data = get_data(path=path)
 
     song_names = data.find_all("key", string="Name")
     artist_names = data.find_all("key", string="Artist")
