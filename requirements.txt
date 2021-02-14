@@ -1,3 +1,4 @@
 pylast
 python-dotenv
+lxml
 beautifulsoup4>=4.4.0

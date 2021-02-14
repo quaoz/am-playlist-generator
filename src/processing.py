@@ -15,6 +15,7 @@ def get_apple_music_tracks(path):
 
     song_names = data.find_all("key", string="Name")
     artist_names = data.find_all("key", string="Artist")
+
     titles = []
     artists = []
 
